@@ -1,0 +1,56 @@
+﻿@model IEnumerable<DocumentSharing.Models.Classroom>
+
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Classroom</h1>
+@*<h1>@Accessor.HttpContext.Session.GetString("UserEmail")</h1>*@
+
+@if (@Accessor.HttpContext.Session.GetString("UserEmail") == "admin@gmail.com")
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClassName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Subject)
+                </td>
+                <td>
+                  @if (@Accessor.HttpContext.Session.GetString("UserEmail") == "admin@gmail.com")
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    }|
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    @if (@Accessor.HttpContext.Session.GetString("UserEmail") == "admin@gmail.com")
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
