@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\megha\\Downloads\\DocumentSharing\\DocumentSharing\\DocumentSharing.csproj": {}
+    "D:\\SEM-5\\WAD\\DocumentSharing\\DocumentSharing\\DocumentSharing.csproj": {}
   },
   "projects": {
-    "C:\\Users\\megha\\Downloads\\DocumentSharing\\DocumentSharing\\DocumentSharing.csproj": {
+    "D:\\SEM-5\\WAD\\DocumentSharing\\DocumentSharing\\DocumentSharing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\megha\\Downloads\\DocumentSharing\\DocumentSharing\\DocumentSharing.csproj",
+        "projectUniqueName": "D:\\SEM-5\\WAD\\DocumentSharing\\DocumentSharing\\DocumentSharing.csproj",
         "projectName": "DocumentSharing",
-        "projectPath": "C:\\Users\\megha\\Downloads\\DocumentSharing\\DocumentSharing\\DocumentSharing.csproj",
+        "projectPath": "D:\\SEM-5\\WAD\\DocumentSharing\\DocumentSharing\\DocumentSharing.csproj",
         "packagesPath": "C:\\Users\\megha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\megha\\Downloads\\DocumentSharing\\DocumentSharing\\obj\\",
+        "outputPath": "D:\\SEM-5\\WAD\\DocumentSharing\\DocumentSharing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
